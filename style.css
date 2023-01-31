@@ -1,0 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.main {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background: black;
+   
+}
+
+span {
+   height: 70px;
+   width: 70px;
+   position: absolute;
+   background: url("heart.png");
+   background-size: cover;
+   border-radius: 50%;
+   left: 50%;
+   top: 50%;
+   
+   box-shadow: 0 0 10px white
+               0 0 20px pink;
+   
+   
+   animation: animate 11s infinite;
+}
+
+@keyframes animate {
+   0%{
+      transform: translatex(0px);
+      transform: translatey(-100px);
+   }
+   
+   
+   100%{
+       transform: translatex(0px);
+       transform: translatey(-10000px);
+   }
+   
+}
